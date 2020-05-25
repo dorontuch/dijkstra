@@ -54,7 +54,7 @@ int main() {
 	graph2.nodes = NULL;
 	graph2.numOfNodes = 0;
 
-	// create the node of the gragh
+	// create the node of the graph
 	A = createAndInitNode();
 	B = createAndInitNode();
 	C = createAndInitNode();
@@ -84,7 +84,7 @@ int main() {
 	createEdge(&G, &F, 3);
 
 
-	//insert the nodes into the gragh
+	//insert the nodes into the graph
 	insertIntoGraph(&graph2, A);
 	insertIntoGraph(&graph2, B);
 	insertIntoGraph(&graph2, C);
@@ -221,7 +221,7 @@ void Dijkstra(Pgraph graph, Pnode startNode, Pnode endNode) {
 	printf("%d ", endNode->index);
 }
 
-//insert node into the gragh
+//insert node into the graph
 //implementation with array
 void insertIntoGraph(Pgraph graph, Pnode node) {
 	Pnode *temp=NULL;
